@@ -31,6 +31,20 @@ body {
     font-family: sans-serif;
     width: 100vw;
     position: relative;
+    cursor: none;
+}
+
+.dot-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8); 
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.6), 
+              0 0 15px 10px rgba(255, 255, 255, 0.3); 
 }
 
 .full-screen {
@@ -113,6 +127,7 @@ body {
     align-items: center;
     text-decoration: none;
     transition: all ease 0.5s;
+    cursor: none;
 }
 
 .link-container a i{
